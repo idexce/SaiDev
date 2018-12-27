@@ -7,7 +7,7 @@ node {
          sh 'docker tag idexcel-interns/saidev:${BUILD_NUMBER} idexcelinterns/saidev:latest'
    }
    stage('Push Image'){
-         docker login -u idexcelinterns -p kutty170065
+         sh 'docker login -u idexcelinterns -p kutty170065'
          sh 'docker push idexcelinterns/saidev:latest'
    }
 }
