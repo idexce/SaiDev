@@ -14,16 +14,3 @@ public class Status {
     return "{\"status\": \"idle\"}\n";
   }
 }
-
-
-
-
-@Path("spring")
-public class Spring {
-
-  @GET
-  @Produces(MediaType.APPLICATION_JSON)
-  public String statusInformation() {
-    return "{\"spring\": \"idle\"}\n";
-  }
-}
